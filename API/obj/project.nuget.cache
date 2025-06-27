@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6r+M2xz0n/4=",
+  "dgSpecHash": "7ocOI3UlMxQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\okanc\\Desktop\\e-commerce\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\okanc\\Desktop\\Git_Upload\\ReactJs_Ecommerce\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\okanc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\okanc\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",

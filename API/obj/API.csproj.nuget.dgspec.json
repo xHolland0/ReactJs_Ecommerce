@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\okanc\\Desktop\\e-commerce\\API\\API.csproj": {}
+    "C:\\Users\\okanc\\Desktop\\Git_Upload\\ReactJs_Ecommerce\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\okanc\\Desktop\\e-commerce\\API\\API.csproj": {
+    "C:\\Users\\okanc\\Desktop\\Git_Upload\\ReactJs_Ecommerce\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okanc\\Desktop\\e-commerce\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\okanc\\Desktop\\Git_Upload\\ReactJs_Ecommerce\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\okanc\\Desktop\\e-commerce\\API\\API.csproj",
+        "projectPath": "C:\\Users\\okanc\\Desktop\\Git_Upload\\ReactJs_Ecommerce\\API\\API.csproj",
         "packagesPath": "C:\\Users\\okanc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okanc\\Desktop\\e-commerce\\API\\obj\\",
+        "outputPath": "C:\\Users\\okanc\\Desktop\\Git_Upload\\ReactJs_Ecommerce\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\okanc\\AppData\\Roaming\\NuGet\\NuGet.Config"
