@@ -1,0 +1,5 @@
+node_modules/* linguist-vendored
+bin/* linguist-generated
+obj/* linguist-generated
+frontend/* linguist-language=TypeScript
+backend/* linguist-language=C#
