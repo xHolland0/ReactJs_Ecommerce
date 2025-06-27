@@ -1,6 +1,6 @@
 
 <div id="top" class="">
-<h1 align="center">REACTJS_ECOMMERCE</h1>
+<h1 align="center">🛒 ReactJs Ecommerce</h1>
 
 <p align="center"><em>Transform Shopping Into Seamless Experiences</em></p>
 
