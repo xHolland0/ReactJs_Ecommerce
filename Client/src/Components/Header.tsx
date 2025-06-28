@@ -1,7 +1,14 @@
+import { AppBar, Toolbar, Typography } from "@mui/material";
 
 
-export default function Header(props:any){
+export default function Header(){
   return(
-    <h1>Header [{props.products.length}]</h1>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6">E-Commerce</Typography>
+      </Toolbar>
+    </AppBar>
   )
 }
+
+

@@ -49,7 +49,7 @@ namespace API.Migrations
                         new
                         {
                             Id = 1,
-                            Description = "Phone Description",
+                            Description = "Apple Phone",
                             ImageUrl = "1.jpg",
                             IsActive = true,
                             Name = "Iphone 15",
@@ -59,7 +59,7 @@ namespace API.Migrations
                         new
                         {
                             Id = 2,
-                            Description = "Phone Description",
+                            Description = "Apple Phone",
                             ImageUrl = "2.jpg",
                             IsActive = true,
                             Name = "Iphone 16",
@@ -69,7 +69,7 @@ namespace API.Migrations
                         new
                         {
                             Id = 3,
-                            Description = "Phone Description",
+                            Description = "Apple Phone",
                             ImageUrl = "3.jpg",
                             IsActive = true,
                             Name = "Iphone 15 Pro",
@@ -79,7 +79,7 @@ namespace API.Migrations
                         new
                         {
                             Id = 4,
-                            Description = "Phone Description",
+                            Description = "Apple Phone",
                             ImageUrl = "4.jpg",
                             IsActive = true,
                             Name = "Iphone 16 Pro",

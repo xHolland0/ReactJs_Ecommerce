@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import type { IProduct } from "../Model/IProduct";
 import Header from "./Header";
 import ProductList from "./ProductList";
+import { Container, CssBaseline } from "@mui/material";
 
 
 function App() {
@@ -14,25 +15,17 @@ function App() {
   .then(data => setProducts(data))
   }, []);
 
-  function addProduct(){
-    setProducts([...Products,
-      {
-      id: Date.now(), 
-      name: "product4", 
-      price: 400, 
-      isActive: true,
-      description: "",
-      imageUrl: "",
-      stock: 1
-    }])
-  }
 
 
 
   return (
     <>
-    <Header products={Products} />
-    <ProductList products={Products} addProduct={addProduct}/>
+    <CssBaseline/>
+    <Header/>
+
+    <Container>
+      <ProductList products={Products}/>
+    </Container>
     </>
   )
 }

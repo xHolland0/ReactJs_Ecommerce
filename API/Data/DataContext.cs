@@ -17,7 +17,7 @@ public class DataContext(DbContextOptions options) : DbContext(options)
                 new Product{
                 Id =1,
                 Name="Iphone 15",
-                Description="Phone Description",
+                Description="Apple Phone",
                 ImageUrl="1.jpg",
                 Price=800,
                 IsActive=true,
@@ -27,7 +27,7 @@ public class DataContext(DbContextOptions options) : DbContext(options)
                 new Product{
                 Id =2,
                 Name="Iphone 16",
-                Description="Phone Description",
+                Description="Apple Phone",
                 ImageUrl="2.jpg",
                 Price=900,
                 IsActive=true,
@@ -37,7 +37,7 @@ public class DataContext(DbContextOptions options) : DbContext(options)
                 new Product{
                 Id =3,
                 Name="Iphone 15 Pro",
-                Description="Phone Description",
+                Description="Apple Phone",
                 ImageUrl="3.jpg",
                 Price=850,
                 IsActive=true,
@@ -47,7 +47,7 @@ public class DataContext(DbContextOptions options) : DbContext(options)
                 new Product{
                 Id =4,
                 Name="Iphone 16 Pro",
-                Description="Phone Description",
+                Description="Apple Phone",
                 ImageUrl="4.jpg",
                 Price=950,
                 IsActive=true,
