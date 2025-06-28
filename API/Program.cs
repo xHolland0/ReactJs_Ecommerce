@@ -15,6 +15,7 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlite(connectingString); //Kullanacağın DataBase türüne göre değişiklik gösterir!
 });
 
+builder.Services.AddCors();
 // Add services to the container.
 
 
@@ -35,6 +36,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(opt =>
+{
+    opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+});
 
 app.UseAuthorization();
 
