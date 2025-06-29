@@ -1,22 +1,11 @@
 import { useEffect, useState } from "react"
 import type { IProduct } from "../Model/IProduct";
 import Header from "./Header";
-import ProductList from "./ProductList";
 import { Container, CssBaseline } from "@mui/material";
+import { Outlet } from "react-router";
 
 
 function App() {
-
-  const[Products, setProducts] = useState<IProduct[]>([]);
-
-  useEffect(()=>{
-  fetch("http://localhost:5205/api/Product")
-  .then(response=> response.json())
-  .then(data => setProducts(data))
-  }, []);
-
-
-
 
   return (
     <>
@@ -24,7 +13,10 @@ function App() {
     <Header/>
 
     <Container>
-      <ProductList products={Products}/>
+
+      {/* <ProductList products={Products}/> */}
+      <Outlet />
+
     </Container>
     </>
   )

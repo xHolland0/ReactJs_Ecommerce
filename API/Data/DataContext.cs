@@ -52,6 +52,16 @@ public class DataContext(DbContextOptions options) : DbContext(options)
                 Price=950,
                 IsActive=true,
                 Stock=250
+                },
+
+                new Product{
+                Id =5,
+                Name="Iphone 17 Pro",
+                Description="Apple Phone",
+                ImageUrl="4.jpg",
+                Price=1220,
+                IsActive=true,
+                Stock=250
                 }
 
             }
