@@ -51,8 +51,8 @@ export default function ProductDetalisPage(){
                             </TableRow>
 
                             <TableRow>
-                                <TableCell>Stok</TableCell>
-                                <TableCell>{product.name}</TableCell>
+                                <TableCell>Stock</TableCell>
+                                <TableCell>{product.stock}</TableCell>
                             </TableRow>
 
                         </TableBody>
