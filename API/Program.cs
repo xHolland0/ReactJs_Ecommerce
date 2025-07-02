@@ -1,4 +1,5 @@
 using API.Data;
+using API.Middlewares;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -25,15 +26,22 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
+//Custom Middlewares
+app.UseMiddleware<ExceptionHandling>();
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-    app.UseSwaggerUI(options=>
+    app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/openapi/v1.json", "Demo API");
     });
 }
+
+
+//Middlewares
 
 app.UseHttpsRedirection();
 

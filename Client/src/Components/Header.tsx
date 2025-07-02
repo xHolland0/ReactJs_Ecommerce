@@ -1,5 +1,5 @@
 import { FlareSharp, ShoppingCart } from "@mui/icons-material";
-import { AppBar, ListItem, Toolbar, Typography, List,Box, colors, IconButton, Badge} from "@mui/material";
+import { AppBar, ListItem, Toolbar, Typography, List,Box, IconButton, Badge} from "@mui/material";
 import { NavLink } from "react-router";
 
 const links = [
@@ -33,7 +33,7 @@ export default function Header(){
           <List sx={ {display:"flex"} }>
 
             {links.map(link=> //Dizi Öğelerini Dönüştürerek Ürünleri Listeliyoruz 
-            <ListItem component={NavLink} to={link.to} sx={navStyles}> {link.title} </ListItem>
+            <ListItem key={link.to} component={NavLink} to={link.to} sx={navStyles}> {link.title} </ListItem>
             )}
 
           </List>
