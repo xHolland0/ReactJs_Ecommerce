@@ -2,18 +2,18 @@ import { CircularProgress, Divider, Grid, Table,TableBody, TableCell, TableConta
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import type { IProduct } from "../../Model/IProduct";
+import request from "../../api/requests";
 
 export default function ProductDetalisPage(){
     
-    const{id}=useParams(); //=> React Route Kütüphanesinden gelden useParms Parametresi İle Oluşturduğumuz ":id" Bilgisini Alıyoruz.
+    const{id}=useParams<{id: string}>(); //=> React Route Kütüphanesinden gelden useParms Parametresi İle Oluşturduğumuz ":id" Bilgisini Alıyoruz.
     
     //State Tanımları
     const [product, setProduct] = useState<IProduct | null> (null); //=> Başlangıç Değeri Null
     const [loading, setLoading] = useState(true);//=> loading; Verinin Yüklenme Durumunu Kontrol eder, setLoading; Yüklenme Durumunu Değiştirir
     
     useEffect(() => {
-        fetch(`http://localhost:5205/api/Product/${id}`)
-        .then(response => response.json())
+        id && request.Catalog.details(parseInt(id))
         .then(data => setProduct(data))
         .catch(error => console.log(error))
         .finally(() => setLoading(false))
