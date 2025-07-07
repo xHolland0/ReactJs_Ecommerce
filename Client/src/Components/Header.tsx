@@ -1,12 +1,13 @@
-import { FlareSharp, ShoppingCart } from "@mui/icons-material";
+import { ShoppingCart } from "@mui/icons-material";
 import { AppBar, ListItem, Toolbar, Typography, List,Box, IconButton, Badge} from "@mui/material";
 import { NavLink } from "react-router";
 
 const links = [
   {title: "Home", to:"/"},
   {title: "Catalog", to:"/catalog"},
-  {title: "Abaout", to:"/about"},
-  {title: "Contact", to:"/contact"}
+  {title: "About", to:"/about"},
+  {title: "Contact", to:"/contact"},
+  {title: "Error", to:"/error"}
 ]
 
 const navStyles={
