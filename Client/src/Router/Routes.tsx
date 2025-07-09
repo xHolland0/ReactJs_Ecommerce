@@ -7,6 +7,8 @@ import CatalogPage from "../Pages/Catalog/CatalogPage";
 import ProductDetalisPage from "../Pages/Catalog/ProductDetails";
 import ErrorPage from "../Pages/ErrorPage";
 import ServerError from "../Errors/ServerError";
+import NotFound from "../Errors/NotFound";
+
 
 //Routerları tanımlıyoruz
 export const router = createBrowserRouter([
@@ -20,7 +22,9 @@ export const router = createBrowserRouter([
             {path:"catalog", element: <CatalogPage />},
             {path:"catalog/:id", element: <ProductDetalisPage />},
             {path:"error", element: <ErrorPage />},
-            {path:"server-error", element: <ServerError />}
+
+            {path:"server-error", element: <ServerError />},
+            {path:"not-found", element: <NotFound/>},
         ]
     }
 ])
